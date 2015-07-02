@@ -4,13 +4,16 @@ html{
   top: -8px;
   left: -8px;
   width: 100%;
-  height: auto;
   margin: 0 auto;
   text-align: center;
 }
 
 *, *:before, *:after{
   box-sizing: inherit;
+}
+
+body {
+  font-family: 'Rokkitt', serif;
 }
 
 .menu_bar{
@@ -33,16 +36,18 @@ html{
   right: 15px;
 }
 
-.photo_content{
-  width: 100%;
-  height: 100%;
-}
+/*.camp_logo{
+  position: relative;
+  display: block;
+}*/
 
-.camp_logo{
+#scenic_background{
+  position: relative;
   background-image: url(assets/page1/trees.png), url(assets/page1/lake.png), url(assets/page1/mountains.jpg);
-  background-position: top center, 30% 5%, top center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-position: top center, center, top center;
+  background-size: cover;
+  height: 495px;
+  text-align: center;
 }
 
 /*#mountains{
@@ -58,7 +63,7 @@ html{
   max-width: 100%;
   height: auto;
   z-index: 3;
-}*/*/
+}*/
 
 /*#lake{
   position: absolute;
@@ -69,25 +74,123 @@ html{
 }*/
 
 #hero_logo{
-  position: relative;
-  top: -100px;
-  width: 20%;
-  z-index: 10;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 60%;
 }
 
 #event_location{
-  position: relative;
+  position: absolute;
 }
 
 #date{
   position: absolute;
-  width: 50%;
+  top: 8%;
+  left: 40%;
+  width: 150px;
+  margin: auto;
   z-index: 4;
 }
 
 #sponser{
   background-color: rgb(43, 72, 70);
-  background-color: cyan;
   position: relative;
   top: -820px;
 }
+
+h2 {
+  padding: 16px;
+  font-size: 36px;
+  text-align: center;
+}
+
+#page2_intro{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(63, 81, 110);
+  font: 36px/40px "Rokkitt", Helvetica, Arial, sans-serif;
+  letter-spacing: -1px;
+}
+
+.displayed{
+  width: 25%;
+}
+
+.topics h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(80, 134, 80);
+}
+
+ul{
+  list-style-type: none;
+}
+
+.page3{
+  background-image: url("assets/page3/board.jpg");
+  repeat: repeat-y;
+}
+
+#schedule{
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: 90px;
+  max-width: 100%;
+}
+
+.date{
+  color: rgb(232, 191, 60);
+  font-size: 48px;
+  position: relative;
+  top: 90px;
+  margin: 70px;
+  line-height: 45px;
+}
+
+.location{
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 30px;
+}
+
+.time{
+  color: white;
+  position: relative;
+  top: 60px;
+  border: 3px solid rgb(205, 91, 41);
+  border-radius: 100px;
+  width: 13%;
+  margin: auto;
+}
+
+.number{
+  display: block;
+  font-size: 48px;
+  line-height: 32px;
+  padding-top: 12px;
+}
+
+.meridian{
+  display: block;
+  font-size: 18px;
+}
+
+.event{
+  color: white;
+  position: relative;
+  top: 60px;
+  margin: 10px;
+}
+
+.description{
+  position: relative;
+  top: 60px;
+}
+
+#fire{
+  max-width: 100%;
+}
+
